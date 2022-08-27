@@ -1,12 +1,79 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Посчитай-ка</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body class="page">
+    <header class="header">
+      <div class="header__logo-container">
+        <img src="" alt="Логотип" class="header__logo" />
+        <h1 class="header__title">Посчитай-ка!</h1>
+      </div>
+      <button class="header__for-parents">Для родителей</button>
+    </header>
+    <main>
+      <section class="task">
+        <button class="task__reload"></button>
+        <ul class="task__container">
+          <li class="task__letter">2</li>
+          <li class="task__letter">+</li>
+          <li class="task__letter">2</li>
+          <li class="task__letter">=</li>
+          <li class="task__letter">?</li>
+        </ul>
+      </section>
+      <section class="field">
+        <div class="field__add-container">
+          <img src="" alt="" class="field__character-example" />
+          <button class="field__add-button"></button>
+        </div>
+        <div class="field__add-container">
+          <img src="" alt="" class="field__character-example" />
+          <button class="field__add-button"></button>
+        </div>
+        <div class="field__grid">
+          <ul class="field__row">
+            <li class="field__cell"><img src="./images/rabbit.jpg" alt="" class="field__character"></li>
+            <li class="field__cell"><img src="./images/rabbit.jpg" alt="" class="field__character"></li>
+            <li class="field__cell"><img src="./images/rabbit.jpg" alt="" class="field__character"></li>
+            <li class="field__cell"><img src="./images/rabbit.jpg" alt="" class="field__character"></li>
+            <li class="field__cell"><img src="./images/rabbit.jpg" alt="" class="field__character"></li>
+            <li class="field__cell"><img src="./images/rabbit.jpg" alt="" class="field__character"></li>
+            <li class="field__cell"><img src="./images/rabbit.jpg" alt="" class="field__character"></li>
+            <li class="field__cell"></li>
+            <li class="field__cell"></li>
+            <li class="field__cell"></li>
+          </ul>
+          <ul class="field__row">
+            <li class="field__cell"><img src="./images/elephant.jpg" alt="" class="field__character"></li>
+            <li class="field__cell"><img src="./images/elephant.jpg" alt="" class="field__character"></li>
+            <li class="field__cell"></li>
+            <li class="field__cell"></li>
+            <li class="field__cell"></li>
+            <li class="field__cell"></li>
+            <li class="field__cell"></li>
+            <li class="field__cell"></li>
+            <li class="field__cell"></li>
+            <li class="field__cell"></li>
+          </ul>
+        </div>
+      </section>
+      <section class="answer">
+        <h2 class="answer__title">Твой ответ?</h2>
+        <ul class="answer__variants">
+            <li class="answer__variant">2</li>
+            <li class="answer__variant">3</li>
+            <li class="answer__variant">4</li>
+            <li class="answer__variant">5</li>
+            <li class="answer__variant">6</li>
+        </ul>
+      </section>
+      <footer class="footer">
+        <p class="footer__copyright">&copy; 2022 Николай Шикаленко</p>
+      </footer>
+    </main>
+  </body>
 </html>
