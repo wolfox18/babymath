@@ -1,0 +1,32 @@
+.task__reload {
+  background-image: url("../../images/reload.png");
+  background-repeat: no-repeat;
+  background-color: #2ecc71;
+  background-position: 50%;
+  border: none;
+  width: 200px;
+  height: 80px;
+  border-radius: 50px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+  color: #ecf0f1;
+  transition: border-radius 0.3s;
+}
+.task__reload:hover,
+.task__reload:focus {
+  border-radius: 5px;
+}
+.task__container {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 40px 0 20px;
+  margin: 0;
+  gap: 40px;
+}
+.task__letter {
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 58px;
+}

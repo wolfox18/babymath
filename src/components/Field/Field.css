@@ -1,0 +1,87 @@
+.field__controllers-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.field__add-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.field__character-example {
+  height: 100px;
+  width: 100px;
+}
+.field__add-button {
+  padding: 5px 10px;
+  height: 50px;
+  width: 60px;
+  border-width: 0;
+  outline: none;
+  border-radius: 20px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+  background-color: #2ecc71;
+  color: #ecf0f1;
+  transition: border-radius 0.3s;
+  font-size: 30px;
+}
+.field__add-button:hover,
+.field__add-button:focus {
+  border-radius: 5px;
+}
+
+.field__grid {
+  width: 100%;
+  padding: 40px 0;
+  display: grid;
+  grid-template-columns: repeat(10, auto);
+  gap: 20px;
+  list-style-type: none;
+  margin: 0;
+}
+.field__cell {
+  /* border: #a3a3a3 solid 1px; */
+  width: 80px;
+  height: 80px;
+  box-sizing: border-box;
+ 
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.field__cell_type_elephant {
+  background-image: url("../../images/elephant.jpg");
+}
+.field__cell_type_rabbit {
+  background-image: url("../../images/rabbit.jpg");
+}
+.field__cell:hover {
+  background-image: url("../../images/exclude.svg");
+  cursor: pointer;
+}
+.field__button {
+  width: 80px;
+  height: 30px;
+  padding: 5px 0;
+  box-sizing: border-box;
+  border-radius: 20px;
+  box-shadow: 3px 5px 15px #909090;
+  border: none;
+  background-position: 50%;
+  background-size: fit;
+  background-repeat: no-repeat;
+  background-image: url("../../images/exclude.svg");
+  cursor: pointer;
+}
+.field__cell-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  box-shadow: 3px 5px 15px #909090;
+  background-position: 50%;
+}
+.field__cell-image:hover {
+  opacity: 0%;
+}
