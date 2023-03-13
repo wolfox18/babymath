@@ -2,7 +2,7 @@ import React from "react";
 import logo from "../../images/owl-logo-min.png";
 import "./Header.css";
 
-export const Header = () => {
+export const Header = ({onParentsButtonClick}) => {
   return (
     <header className="header">
       <div className="header__container">
@@ -10,7 +10,7 @@ export const Header = () => {
           <img src={logo} alt="Логотип" className="header__logo" />
           <h1 className="header__title">Посчитай!</h1>
         </a>
-        <button className="header__button">Для родителей</button>
+        <button onClick={onParentsButtonClick} className="header__button">Для родителей</button>
       </div>
     </header>
   );

@@ -20,3 +20,11 @@
   align-items: center;
   padding: 20px 30px;
 }
+.transparent-button {
+  transition: opacity 0.3s ease 0s;
+  cursor: pointer;
+}
+
+.transparent-button:hover {
+  opacity: 0.6;
+}
