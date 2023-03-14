@@ -1,7 +1,16 @@
 import React from "react";
 import "./Answer.css";
 
-export const Answer = () => {
+export const Answer = (rightAnswer) => {
+  var array = [];
+
+  for (let i = 10; i <= 20; i++) {
+    array.push(i);
+  }
+
+  for (let countCycles = 1; countCycles <= 5; countCycles++) {
+    console.log(array.splice(Math.random() * array.length, 1)[0]);
+  }
   return (
     <section className="block">
       <div className="block__container">
