@@ -33,7 +33,7 @@ function App() {
       <main>
         <Task digits={digits} onRefreshCick={refreshTask} />
         <Field />
-        <Answer />
+        <Answer rightAnswer={digits[0] + digits[1]}/>
         <Popup
           isOpen={isInfoPopupOpened}
           onClose={closeInfoPopup}

@@ -2,7 +2,7 @@ import React from "react";
 import "./Field.css";
 import elephantPicture from "../../images/elephant.jpg";
 import rabbitPicture from "../../images/rabbit.jpg";
-import { animals } from "../Answer/Utils/utils";
+import { animals } from "../../Utils/utils";
 
 export const Field = () => {
  const [animalCards, setAnimalCards] = React.useState([]);
