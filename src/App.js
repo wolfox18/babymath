@@ -5,10 +5,13 @@ import { Field } from "./components/Field/Field";
 import { Answer } from "./components/Answer/Answer";
 import React from "react";
 import { Popup } from "./components/Popup/Popup";
+import { MIN_VARIANT, MAX_VARIANT, NUMBER_OF_VARIANTS } from "./Utils/constants";
+import { shuffle } from "./Utils/utils";
 
 function App() {
   const [digits, setDigits] = React.useState([0, 0]);
   const [isInfoPopupOpened, setIsInfoPopupOpened] = React.useState(false);
+  const [variants, setVariants] = React.useState([]);
 
   React.useEffect(() => {
     refreshTask();
@@ -18,6 +21,17 @@ function App() {
     const a = Math.floor(Math.random() * 4 + 6);
     const b = Math.floor(Math.random() * 7 + 3);
     setDigits([a, b]);
+    var array = [];
+    for (let i = MIN_VARIANT; i <= MAX_VARIANT; i++) {
+      if (i !== a + b) array.push(i);
+    }
+    var newVariants = [];
+    for (let countCycles = 1; countCycles <= NUMBER_OF_VARIANTS - 1; countCycles++) {
+      newVariants.push(array.splice(Math.random() * array.length, 1)[0]);
+    }
+    newVariants.push(a + b);
+    shuffle(newVariants);
+    setVariants(newVariants);
   };
 
   const closeInfoPopup = () => {
@@ -33,7 +47,7 @@ function App() {
       <main>
         <Task digits={digits} onRefreshCick={refreshTask} />
         <Field />
-        <Answer rightAnswer={digits[0] + digits[1]}/>
+        <Answer rightAnswer={digits[0] + digits[1]} variants={variants}/>
         <Popup
           isOpen={isInfoPopupOpened}
           onClose={closeInfoPopup}
