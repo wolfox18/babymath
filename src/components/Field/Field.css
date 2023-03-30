@@ -35,7 +35,7 @@
 
 .field__grid {
   width: 100%;
-  padding: 40px 0;
+  padding: 16px 0;
   display: grid;
   grid-template-columns: repeat(10, auto);
   gap: 20px;

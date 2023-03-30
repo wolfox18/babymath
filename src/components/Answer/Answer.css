@@ -1,9 +1,29 @@
 .answer__title{
-
+  margin: 0;
+  padding: 30px 10px;
+  font-weight: 800;
+  font-size: 28px;
 }
 .answer__variants{
-
+  padding: 10px;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  list-style-type: none;
 }
 .answer__variant{
-    
+  padding: 20px 10px;
+  font-weight: 800;
+  font-size: 24px;
+  cursor: pointer;
+}
+.answer__variant_type_unselected {
+  color: black;
+}
+.answer__variant_type_correct {
+  color: green;
+}
+.answer__variant_type_wrong {
+  color: red;
 }
