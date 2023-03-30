@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/babymath/static/css/main.f62359ed.css",
+    "main.js": "/babymath/static/js/main.93ddd9b0.js",
+    "static/js/787.7cb2f0b2.chunk.js": "/babymath/static/js/787.7cb2f0b2.chunk.js",
+    "static/media/owl-logo-min.png": "/babymath/static/media/owl-logo-min.a04a1d3a61e17f01f988.png",
+    "static/media/Comfortaa-Medium.woff": "/babymath/static/media/Comfortaa-Medium.d4963e8690a52d5a8443.woff",
+    "static/media/Comfortaa-Regular.woff": "/babymath/static/media/Comfortaa-Regular.fb62747b9504f48a6e89.woff",
+    "static/media/rabbit.jpg": "/babymath/static/media/rabbit.e0522ca68f72c4334c3d.jpg",
+    "static/media/elephant.jpg": "/babymath/static/media/elephant.c73fdf1e331422c2d925.jpg",
+    "index.html": "/babymath/index.html",
+    "static/media/exclude.svg": "/babymath/static/media/exclude.a2f74a497c2f4a0f8f27.svg",
+    "static/media/close-icon.svg": "/babymath/static/media/close-icon.039f1f5203f653b4bacd.svg",
+    "main.f62359ed.css.map": "/babymath/static/css/main.f62359ed.css.map",
+    "main.93ddd9b0.js.map": "/babymath/static/js/main.93ddd9b0.js.map",
+    "787.7cb2f0b2.chunk.js.map": "/babymath/static/js/787.7cb2f0b2.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f62359ed.css",
+    "static/js/main.93ddd9b0.js"
+  ]
+}
